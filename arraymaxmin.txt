@@ -3,11 +3,11 @@ using namespace std;
 
 int getMin(int num[], int n) {
 
-    int mini = INT_MAX;
+    int minimum = INT_MAX;
     
     for(int i = 0; i<n; i++) {
         
-        mini = min( mini, num[i]);
+        minimum = min( minimum, num[i]);
         
         //if(num[i] < min){
         //    min = num[i];
@@ -15,16 +15,16 @@ int getMin(int num[], int n) {
     }
 
     //returning min value
-    return mini;
+    return minimum;
 }
 
 int getMax(int num[], int n) {
 
-    int maxi = INT_MIN;
+    int maximum = INT_MIN;
     
     for(int i = 0; i<n; i++) {
 
-        maxi = max(maxi, num[i]);
+        maximum = max(maximum, num[i]);
 
        // if(num[i] > max){
          //   max = num[i];
@@ -32,7 +32,7 @@ int getMax(int num[], int n) {
     }
 
     //returning max value
-    return maxi;
+    return maximum;
 }
 
 int main() {
